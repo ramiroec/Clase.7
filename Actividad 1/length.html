@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Métodos de Texto en JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Métodos de Texto en JavaScript</h1>
+    
+    <div class="concepto">
+        <h2>Propiedad Length</h2>
+        <p>Permite encontrar la longitud (número de caracteres) de un texto.</p>
+        
+        <div class="ejemplo">
+            <code>let texto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br>
+            let longitud = texto.length;</code>
+            <div class="resultado" id="lengthResult"></div>
+        </div>
+        
+        <div class="interactivo">
+            <p>Prueba tú mismo:</p>
+            <input type="text" id="lengthInput" placeholder="Escribe algo...">
+            <button onclick="calcularLongitud()">Calcular Longitud</button>
+            <div class="resultado" id="lengthInteractiveResult"></div>
+        </div>
+    </div>
+    
+    <div class="concepto">
+        <h2>Método Slice</h2>
+        <p>Extrae una parte de un texto. Toma 2 parámetros: posición inicial y posición final (no incluida).</p>
+        
+        <div class="ejemplo">
+            <code>let frutas = "Manzana, Banana, Kiwi";<br>
+            let parte = frutas.slice(9, 15);</code>
+            <div class="resultado" id="sliceResult"></div>
+        </div>
+        
+        <div class="interactivo">
+            <p>Prueba tú mismo:</p>
+            <input type="text" id="sliceInput" value="JavaScript es genial"><br><br>
+            <label>Inicio: <input type="number" id="sliceStart" value="0" min="0" style="width: 60px;"></label>
+            <label>Fin: <input type="number" id="sliceEnd" value="10" min="0" style="width: 60px;"></label>
+            <button onclick="extraerTexto()">Extraer Texto</button>
+            <div class="resultado" id="sliceInteractiveResult"></div>
+        </div>
+        
+        <p class="nota">* substring() y substr() son métodos similares con pequeñas diferencias.</p>
+    </div>
+    
+    <div class="concepto">
+        <h2>toUpperCase() y toLowerCase()</h2>
+        <p>Convierten un texto a mayúsculas o minúsculas respectivamente.</p>
+        
+        <div class="ejemplo">
+            <code>let saludo = "Hola Mundo!";<br>
+            let mayusculas = saludo.toUpperCase();<br>
+            let minusculas = saludo.toLowerCase();</code>
+            <div class="resultado" id="caseResult"></div>
+        </div>
+        
+        <div class="interactivo">
+            <p>Prueba tú mismo:</p>
+            <input type="text" id="caseInput" value="Transforma este texto"><br><br>
+            <button onclick="aMayusculas()">A MAYÚSCULAS</button>
+            <button onclick="aMinusculas()">a minúsculas</button>
+            <div class="resultado" id="caseInteractiveResult"></div>
+        </div>
+    </div>
+    
+    <div class="concepto">
+        <h2>toString()</h2>
+        <p>Convierte un valor a texto.</p>
+        
+        <div class="ejemplo">
+            <code>let numero = 123;<br>
+            let textoNumero = numero.toString();</code>
+            <div class="resultado" id="toStringResult"></div>
+        </div>
+        
+        <div class="interactivo">
+            <p>Prueba tú mismo:</p>
+            <input type="number" id="toStringInput" value="456"><br><br>
+            <button onclick="convertirATexto()">Convertir a Texto</button>
+            <div class="resultado" id="toStringInteractiveResult"></div>
+        </div>
+    
+    <script src="script.js"></script>
+
+    <script>
+        function calcularLongitud() {
+            const input = document.getElementById('lengthInput').value;
+            document.getElementById('lengthInteractiveResult').innerText = `Longitud: ${input.length}`;
+        }
+
+        function extraerTexto() {
+            const input = document.getElementById('sliceInput
+</body>
+</html>

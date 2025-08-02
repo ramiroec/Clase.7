@@ -1,0 +1,86 @@
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f9f9f9;
+            }
+
+            h1 {
+                color: #2c3e50;
+                text-align: center;
+                margin-bottom: 30px;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+            }
+
+            .concepto {
+                background-color: white;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 25px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .concepto:hover {
+                transform: translateY(-5px);
+            }
+
+            h2 {
+                color: #3498db;
+                margin-top: 0;
+            }
+
+            .ejemplo {
+                background-color: #f0f8ff;
+                padding: 15px;
+                border-left: 4px solid #3498db;
+                margin: 15px 0;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .resultado {
+                background-color: #e8f4f8;
+                padding: 10px;
+                margin-top: 10px;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+
+            .interactivo {
+                background-color: #eaf7ea;
+                padding: 15px;
+                border-radius: 8px;
+                margin-top: 15px;
+            }
+
+            button {
+                background-color: #3498db;
+                color: white;
+                border: none;
+                padding: 8px 15px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-right: 10px;
+                transition: background-color 0.3s;
+            }
+
+            button:hover {
+                background-color: #2980b9;
+            }
+
+            input {
+                padding: 8px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                width: 200px;
+            }
+
+            .nota {
+                font-style: italic;
+                color: #7f8c8d;
+                font-size: 0.9em;
+            }
